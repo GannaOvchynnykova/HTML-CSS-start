@@ -1,0 +1,81 @@
+* {
+    font-style: italic;
+}
+
+body.bd {
+    background-color: azure;
+}
+
+#my-body {
+    background-color: palegoldenrod;
+    color: blue;
+    font-family: 'Roboto', sans-serif;
+    ;
+}
+
+/* kommentn */
+p {
+
+    text-align: center !important;
+    background-color: bisque;
+}
+
+.simple-text {
+    font-size: normal;
+    color: rgb(207, 58, 108);
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+#last {
+    font-size: 24px;
+    background-color: powderblue;
+}
+
+.news article h2 {
+    font-size: 32px;
+    background-color: plum;
+}
+
+.text {
+    text-align: left !important;
+    line-height: 1.7;
+    /*text-decoration: line-through;*/
+    /* text-decoration: overline*/
+    /*text-decoration: underline;*/
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/*.text {
+    font: italic bold 'Times New Roman', Times, serif;
+}*/
+
+.wavy {
+    text-decoration: underline wavy red;
+}
+
+div.box {
+    width: 400px;
+    height: 400px;
+    /*background-color: aqua;
+    background-image: url(./images-2.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover 20%;*/
+    background: aquamarine url(./images-2.png) no-repeat 20px 50px;
+    background-size: 20%;
+}
+
+.box1{
+    width: 100px;
+    height: 100px;
+    background-image:url(./images-2.png);
+    background-color: aquamarine;
+    background-size: cover;
+    border-radius: 50% 50% 0 0 ;
+    border: 5px solid blue ;
+}

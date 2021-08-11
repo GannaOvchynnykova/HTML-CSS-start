@@ -1,0 +1,25 @@
+.blue {
+    background-color: rgb(176, 192, 187) !important;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+#info::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: #777;
+    width: 100%;
+    margin-top: 80px;
+}
+
+#cards::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: #777;
+    width: 100%;
+    margin-top: 80px;
+}

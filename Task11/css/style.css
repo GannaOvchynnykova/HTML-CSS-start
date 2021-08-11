@@ -1,0 +1,356 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+    background: url(../img/Tomatoes_Pasta.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 25px;
+}
+
+.page-header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.page-header ul {
+    display: flex;
+    list-style: none;
+    position: fixed;
+    z-index: 1;
+    right: 50px;
+    background-color: rgba(255, 0, 0, 0.562);
+}
+
+.page-header ul li a {
+    text-transform: uppercase;
+    padding: 20px;
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.page-header img {
+    background-color: rgba(255, 0, 0, 0.562);
+    border-radius: 50%;
+    width: 150px;
+}
+
+.page-main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 350px;
+    color: white;
+    text-align: center;
+}
+
+.page-main .italic {
+    font-style: italic;
+    font-size: 60px;
+}
+
+.page-main h1 {
+    text-transform: uppercase;
+    font-size: 150px;
+    font-weight: 500;
+}
+
+.page-main .btn {
+    text-decoration: none;
+    border: 3px solid white;
+    text-transform: uppercase;
+    padding: 20px;
+    display: inline-block;
+    width: 250px;
+    font-weight: bold;
+    margin: 40px;
+}
+
+.page-main a {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.page-main .get {
+    text-transform: uppercase;
+}
+
+.icons {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.icons .cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    font-size: large;
+}
+
+.cards img {
+    border-radius: 50%;
+    border: 3px solid black;
+    width: 200px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.cards h3 {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+.cards a {
+    text-decoration: none;
+    color: black;
+}
+
+.cards hr {
+    color: red;
+    width: 150px;
+    margin: 0 auto;
+}
+
+.cards p {
+    line-height: 30px;
+    padding: 35px;
+}
+
+#nav-top {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2;
+    font-size: 25px;
+    right: 50px;
+    text-transform: uppercase;
+    background-color: rgba(255, 0, 0, 0.562);
+    padding: 10px;
+}
+
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.intro {
+    margin-top: 150px;
+    display: flex;
+}
+
+.tel .bg-tel {
+    background: url(../img/iphone.png) no-repeat;
+    background-size: cover;
+    height: 590px;
+    width: 420px;
+}
+
+.tel {
+    float: left;
+    clear: both;
+}
+
+.tel .page {
+    width: 335px;
+    height: 435px;
+    background: #39F;
+    position: relative;
+    top: 156px;
+    left: 55px;
+}
+
+.intro .text {
+    margin-left: 150px;
+    font-size: large;
+}
+
+.text h3 {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: black;
+    text-align: left;
+    font-size: 25px;
+}
+
+.text hr {
+    color: red;
+    width: 150px;
+    
+}
+
+.text p {
+    margin-bottom: 30px;
+    line-height: 30px;
+}
+
+.text a img {
+    width: 200px;
+    padding: 15px;
+}
+
+.avatar-container {
+    background: url(../img/Tomatoes_Pasta.jpg) no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+}
+
+.avatar {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ava .img {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border: 2px solid white;
+    border-radius: 50%;
+    background: url(../img/avatar.png);
+}
+
+.ava {
+    margin-top: 100px;
+}
+
+.ava p,
+h3 {
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.ava h3 {
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.ava p {
+    font-style: italic;
+    font-size: 20px;
+}
+
+
+.section-cuisine {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.text-cuisine h3 {
+    text-transform: uppercase;
+    padding: 25px;
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+
+.text-cuisine hr {
+    color: red;
+    width: 150px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.cuisine .cuisine-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cuisine-cards div {
+    width: 280px;
+    height: 200px;
+    border: 3px solid white;
+}
+
+
+.cuisine-cards a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+.cuisine-cards p {
+    font-style: italic;
+    margin-top: 50px;
+}
+
+.cuisine-cards h2 {
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.cuisine-cards .italian {
+    background: url(../img/italian.png) no-repeat;
+    background-size: cover;
+}
+
+.cuisine-cards .american {
+    background: url(../img/american.png);
+    background-size: cover;
+}
+
+.cuisine-cards .chinese {
+    background: url(../img/chinese.png);
+    background-size: cover;
+}
+
+.cuisine-cards .french {
+    background: url(../img/french.png);
+    background-size: cover;
+}
+
+.cuisine-cards .indian {
+    background: url(../img/indian.png);
+    background-size: cover;
+}
+
+.cuisine-cards .mexican {
+    background: url(../img/mexican.png);
+    background-size: cover;
+}
+
+.cuisine-cards .sea-food {
+    background: url(../img/sea_food.png);
+    background-size: cover;
+}
+
+.cuisine-cards .pizza {
+    background: url(../img/pizza.png);
+    background-size: cover;
+}
+
+.cuisine-cards .sushi {
+    background: url(../img/sushi.png);
+    background-size: cover;
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+  </head>
+  <body>
+    <a href="./birds.html">
+      <div align="center" id="top">
+        <img src="./image/klipartz.png" alt="bird" width="100" /></div
+    ></a>
+    <h1 align="center" style="margin-top: -20px">Hello birds!</h1>
+    <div align="center">
+      <a href="./forms-page.html" target="_blank">
+        <div
+          style="
+            display: inline-block;
+            background-color: rgb(100, 196, 237);
+            width: 200px;
+          "
+        >
+          <h3>ONE</h3>
+        </div>
+      </a>
+      <a href="./second-page.html" target="_blank">
+        <div
+          style="
+            display: inline-block;
+            background-color: rgb(100, 235, 237);
+            width: 200px;
+          "
+        >
+          <h3>TWO</h3>
+        </div>
+      </a>
+      <div
+        style="
+          display: inline-block;
+          background-color: rgb(100, 233, 166);
+          width: 200px;
+        "
+      >
+        <h3>THREE</h3>
+      </div>
+    </div>
+    <hr />
+    <div align="center">
+      <h2>Registration</h2>
+      <form action="#" method="GET" style="width: 600px">
+        <fieldset>
+          <legend align="center">Fill the form</legend>
+          <p>
+            <label for="name"
+              >Name: <br />
+              <input
+                type="text"
+                name="name"
+                id="name"
+                style="width: 550px"
+                required
+            /></label>
+          </p>
+          <p>
+            <label for="email"
+              >E-mail: <br />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                style="width: 550px"
+                required
+            /></label>
+          </p>
+          <p>
+            <label for="password"
+              >Password: <br />
+              <input
+                type="password"
+                name="password"
+                id="password"
+                style="width: 550px"
+                required
+            /></label>
+          </p>
+          <p>
+            <label for="gender"
+              >Male: <input type="radio" name="gender" id="male" value="male"
+            /></label>
+            <label for="gender"
+              >Female:
+              <input type="radio" name="gender" id="female" value="female"
+            /></label>
+          </p>
+          <select name="color" id="color">
+            <option>Select your favorite color</option>
+            <option value="Red">Red</option>
+            <option value="Blue">Blue</option>
+            <option value="Green">Green</option>
+          </select>
+          <br /><br />
+          <input type="date" name="date" id="" /> <br /><br />
+          <input type="submit" value="send" />
+          <input type="reset" value="reset" />
+        </fieldset>
+      </form>
+      <br /><br />
+    </div>
+    <hr />
+    <div align="center">
+      <form action="#">
+        <table width="600" cellspacing="10">
+          <tr>
+            <td colspan="2">
+              <h2 style="text-align: center">Send your message</h2>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="email">E-mail</label></td>
+            <td><input type="email" name="email" id="email" placeholder="Type your email" size="74"></td>
+          </tr>
+          <tr>
+            <td><label for="message">Message</label></td>
+            <td>
+              <textarea
+                name="message"
+                id="message"
+                cols="60"
+                rows="5"
+                placeholder="Type your message"
+              >
+              </textarea>
+            </td>
+          </tr>
+          <tr>
+            <td>Do you like birds?</td>
+            <td>
+              <label for=""
+                >Yes <input type="radio" name="like" value="yes" id=""
+              /></label>
+              <label for=""
+                >No <input type="radio" name="like" value="not" id=""
+              /></label>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+
+    <div align="center" style="background-color: rgb(100, 196, 237)">
+      <ol style="display: inline-block; text-align: left" start="10">
+        <li><h2>All about birds</h2></li>
+        <li><h2>Birds life in the wild</h2></li>
+        <li><h2>Birds are our friends</h2></li>
+      </ol>
+      <ul style="display: inline-block; text-align: left" type="square">
+        <li><h2>Birds life in the wild</h2></li>
+        <li>
+          <h2>
+            <a href="https://www.allaboutbirds.org/news/" target="blank"
+              >All about birds</a
+            >
+          </h2>
+        </li>
+        <li><h2>Birds are our friends</h2></li>
+      </ul>
+    </div>
+  </body>
+</html>

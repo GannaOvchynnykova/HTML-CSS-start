@@ -1,0 +1,678 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.divider {
+    height: 2px;
+    width: 80px;
+    margin-bottom: 10px;
+    background-color: red;
+}
+
+p {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    color: #777;
+    text-align: center;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/*Header*/
+
+#header {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.22) 70%, rgba(0, 0, 0, 0.22) 100%), url('../img/Tomatoes_Pasta.jpg');
+
+    background-size: cover;
+    height: 100vh;
+    max-height: 800px;
+    color: white;
+    text-align: center;
+}
+
+#header .nav {
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header .logo {
+    width: 120px;
+    height: 120px;
+    padding: 20px;
+    background-color: #fe0804ca;
+    border-radius: 50%;
+    animation: logo-animation 1.5s linear;
+}
+
+.nav .logo img {
+    width: 100%;
+}
+
+#header .nav ul li {
+    display: inline-block;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+
+#header h3 {
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 60px;
+    font-size: 2.5rem;
+    font-style: italic;
+    opacity: 0.7;
+   
+}
+
+#header h1 {
+    font-size: 8rem;
+    text-transform: uppercase;
+    animation: backInDown 1s linear;
+}
+
+#header a {
+    display: inline-block;
+    margin: 20px 0 40px;
+    padding: 20px 80px;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+
+#header a:hover{
+    background-color: #fe0804ca;
+    transform: scale(1.2);
+    border: 6px solid whitesmoke;
+}
+
+#header h4 {
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+}
+
+#header h4 span {
+    font-weight: 700;
+    text-decoration: underline;
+    color: white;
+}
+
+#header h4 span:hover {
+    cursor: pointer;
+}
+
+/*Header end*/
+/*Info start*/
+
+#info {
+    padding: 100px 0;
+}
+
+
+#info .cards-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+#info .card {
+    margin: 0 20px;
+    flex-basis: calc(100%/3 - 40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#info .card .card-img{
+    animation: tada 1s linear;
+}
+
+#info .card-img .card:hover {
+    padding: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin-bottom: 15px;
+}
+
+#info .card-img img {
+    width: 100%;
+}
+
+#info .card h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+
+#info::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: #777;
+    width: 100%;
+    margin-top: 80px;
+}
+
+@keyframes logo-animation{
+    from{
+        opacity: 0;
+        transform: scale();
+    }
+    50%{
+        transform: scale();
+    }
+    to{
+        opacity: 1;
+        transform: scale(1) rotate(360deg);
+    }
+}
+
+/*Info end*/
+/*App section*/
+
+#app-section .container {
+    display: flex;
+    overflow: hidden;
+}
+
+#app-section .phone-block {
+    flex-basis: 360px;
+    height: 480px;
+    position: relative;
+    margin-right: 50px;
+    background: url(../img/iphone.png) no-repeat;
+    background-size: cover;
+    top: 450px;
+    _align-self: flex-end;
+    animation: phone-moving 2s linear 3s forwards ;
+}
+
+#app-section .phone-block img {
+    position: absolute;
+    top: 25%;
+    right: 8%;
+    width: 78%;
+}
+
+@keyframes phone-moving {
+    from{
+        top: 480px;
+    }
+    to{
+        top: 0;
+    }
+    
+}
+
+#app-section .text-block {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: auto;
+    text-align: left;
+    align-items: flex-start;
+    margin-bottom: 150px;
+}
+
+#app-section h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 30px 0 10px;
+}
+
+#app-section p {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    margin-right: 10px;
+    height: 39px;
+    width: 112px;
+}
+
+.btn-appstore {
+    background: url(../img/btn_appstore.png) no-repeat;
+    background-size: 112px 39px
+}
+
+.btn-gplay {
+    background: url(../img/btn_g_play.png) no-repeat;
+    background-size: 112px 39px
+}
+
+/*Comment section*/
+
+#comments-section {
+    position: relative;
+    top: -40px;
+    text-align: center;
+    padding: 70px 0;
+    color: #fff;
+    background:
+        linear-gradient(0deg,
+            rgba(0, 0, 0, 0.8) 0%,
+            rgba(0, 0, 0, 0.2) 100%),
+        url('../img/Tomatoes_Pasta.jpg') no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+#comments-section p {
+    color: #fff;
+    opacity: 0.8;
+}
+
+#comments-section .avatar {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    border: 4px solid #777;
+}
+
+#comments-section .avatar img {
+    position: absolute;
+    left: -25px;
+    top: -10px;
+}
+
+#comments-section .message {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    margin-top: 10px;
+}
+
+#comments-section .signature {
+    font-style: italic;
+}
+
+.bottom-nav .dot {
+    background-color: #fff;
+    opacity: 0.4;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 20px 5px 0;
+}
+
+.bottom-nav .dot:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+/*Section cuisine*/
+
+.section-cuisine {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.text-cuisine h3 {
+    text-transform: uppercase;
+    padding: 25px;
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+
+.text-cuisine hr {
+    color: red;
+    width: 150px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.cuisine .cuisine-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cuisine-cards div {
+    width: 280px;
+    height: 200px;
+    border: 3px solid white;
+}
+
+
+.cuisine-cards a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+.cuisine-cards p {
+    font-style: italic;
+    margin-top: 50px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.cuisine-cards h2 {
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.cuisine-cards .italian {
+    background: url(../img/italian.png) no-repeat;
+    background-size: cover;
+}
+
+.cuisine-cards .american {
+    background: url(../img/american.png);
+    background-size: cover;
+}
+
+.cuisine-cards .chinese {
+    background: url(../img/chinese.png);
+    background-size: cover;
+}
+
+.cuisine-cards .french {
+    background: url(../img/french.png);
+    background-size: cover;
+}
+
+.cuisine-cards .indian {
+    background: url(../img/indian.png);
+    background-size: cover;
+}
+
+.cuisine-cards .mexican {
+    background: url(../img/mexican.png);
+    background-size: cover;
+}
+
+.cuisine-cards .sea-food {
+    background: url(../img/sea_food.png);
+    background-size: cover;
+}
+
+.cuisine-cards .pizza {
+    background: url(../img/pizza.png);
+    background-size: cover;
+}
+
+.cuisine-cards .sushi {
+    background: url(../img/sushi.png);
+    background-size: cover;
+}
+
+@media screen and (max-width: 500px) {
+    #header .nav ul li:not(:last-child) {
+        display: none;
+    }
+
+    #header .nav ul {
+        align-self: flex-end;
+    }
+
+    #header .nav ul img {
+        width: 30px;
+    }
+
+    #header h3 {
+        font-size: 1.5rem;
+        margin-top: 30px;
+    }
+
+    #header h1 {
+        font-size: 4rem;
+    }
+
+    #header a {
+        margin: 20px 0 40px;
+        padding: 10px 40px;
+    }
+
+    #header h4 {
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    #header .nav {
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 10px;
+    }
+
+    #header {
+        max-height: 100%
+    }
+
+    #header .logo {
+        width: 200px;
+        height: 200px;
+    }
+
+    /*Page2*/
+
+    #info {
+        padding: 30px 0;
+    }
+
+
+    #info .cards-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #info .card {
+        margin: 20px 0;
+    }
+
+    #info .card-img {
+        padding: 13px;
+        width: 110px;
+        height: 110px;
+        border: 3px solid black;
+    }
+
+    /*Page3*/
+
+    #app-section .container {
+        display: none;
+    }
+
+    /*Page4*/
+
+    #comments-section {
+        display: none;
+    }
+
+    /*Page5*/
+    .text-cuisine h3 {
+        padding: 5px;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .divider {
+        margin: 0 auto;
+    }
+
+    .cuisine .cuisine-cards {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cuisine-cards div {
+        margin-top: 10px;
+        width: 50px;
+        height: 50px;
+        border: 2px solid (255, 255, 255, 0.877);
+    }
+
+
+    .cuisine-cards a {
+        font-size: 20px;
+    }
+
+    .cuisine-cards p {
+        margin-top: 10px;
+        font-size: 1.3rem;
+        color: rgba(255, 255, 255, 0.877);
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    #header .nav ul {
+        align-self: flex-end;
+    }
+
+    #header .nav ul img {
+        width: 20px;
+    }
+
+    #header h3 {
+        font-size: 1.5rem;
+        margin-top: 30px;
+    }
+
+    #header h1 {
+        font-size: 4rem;
+    }
+
+    #header a {
+        margin: 20px 0 40px;
+        padding: 10px 40px;
+    }
+
+    #header h4 {
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    #header .nav {
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 10px;
+    }
+
+    #header {
+        max-height: 100%
+    }
+
+    #header .logo {
+        width: 200px;
+        height: 200px;
+    }
+
+    /*App section*/
+
+    #app-section .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #app-section .phone-block {
+        display: none;
+    }
+
+    #app-section .text-block {
+        text-align: center;
+    }
+
+    #app-section p {
+        text-align: center;
+    }
+
+    .divider {
+        margin: 0 auto;
+    }
+
+
+    /*Comment section*/
+
+    #comments-section {
+        top: -80px;
+        padding: 90px 0;
+        height: 70vh;
+    }
+
+    #comments-section .message {
+        display: inline-block;
+        width: 60%;
+        color: rgba(255, 255, 255, 0.788);
+        font-weight: 300;
+        line-height: 1.5em;
+    }
+
+    #comments-section .signature {
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 1.5em;
+    }
+
+    /*Page5*/
+    .text-cuisine h3 {
+        padding: 5px;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .divider {
+        margin: 0 auto;
+    }
+
+    .cuisine .cuisine-cards {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cuisine-cards div {
+        margin-top: 30px;
+        width: 200px;
+        height: 200px;
+        border: 2px solid (255, 255, 255, 0.877);
+    }
+
+
+    .cuisine-cards a {
+        font-size: 20px;
+    }
+
+    .cuisine-cards p {
+        font-size: 1.3rem;
+        color: rgba(255, 255, 255, 0.877);
+    }
+
+    .cuisine-cards .sushi {
+        display: none;
+    }
+}

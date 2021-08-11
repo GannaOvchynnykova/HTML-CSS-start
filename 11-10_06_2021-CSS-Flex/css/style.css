@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.row-1 {
+    margin-top: 30px;
+    border: 1px solid blue;
+    display: flex;
+
+    _flex-direction: column-reverse;
+    _flex-direction: row-reverse;
+
+    _justify-content: space-around;
+    _justify-content: space-evenly;
+    justify-content: space-between;
+    _align-items: flex-end;
+    _align-items: center;
+    _align-items: stretch;
+    _align-items: flex-start;
+
+}
+
+.row-1 div {
+    _height: 200px;
+    width: 100px;
+    background-color: green;
+    border: 1px solid red;
+}
+
+.row-1 .box-1 {
+    _height: 400px;
+}
+
+.row-1 .box-2 {
+    _height: 150px;
+    align-self: center;
+}
+
+/*------------*/
+
+.row-2 {
+    border: 2px solid sienna;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: hotpink;
+    padding: 10px;
+    margin: 15px;
+    _height: 150px;
+    _width: 150px;
+    _flex-basis: calc(100% / 4 - 30px);
+    flex-basis: 150px;
+    _flex-grow: 1;
+}
+
+.big-card {
+    height: 250px;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+.grow-2 {
+    flex-grow: 2;
+}
+
+/*jjjjjj*/
+
+.row-3 {
+    display: flex;
+    margin-top: 50px;
+}
+
+.row-3 div {
+    background-color: aquamarine;
+    height: 60px;
+}
+
+.box-3 {
+    _margin-left: auto;
+}
+
+.row-3 div:nth-child(2) {
+    margin-left: auto;
+}
